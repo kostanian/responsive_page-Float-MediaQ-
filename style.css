@@ -58,6 +58,11 @@ footer{
   h1{
     width: 90%;
   }
+  .tile-image{
+    width: 60%;
+    float: left;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width:750px){
@@ -89,19 +94,39 @@ footer{
     font-size: 2em;
   }
 }
-@media (max-width:685px){
-.right_card{
-margin-top: 25px;
-}
-.right_card>h2{
-  margin-top: 0;
-}
-}
 
-@media (max-width:935px){
+@media (max-width:767px){
   .tile-image{
-    width: 50%;
-    float: left;
-    margin-right: 20px;
+    float:none;
+  }
+  .main{
+    text-align: center;
+  }
+  .tile-image{
+    width: 80%;
   }
 }
+
+@media (max-width:767px) {
+.right_card{
+  border-left: 1px dotted grey;
+ }
+ .left_card{
+   border-right: 1px dotted grey;
+ }
+}
+
+@media (max-width:685px) {
+  .right_card{
+    margin-top: 25px;
+    }
+    .right_card>h2{
+      margin-top: 0;
+    }
+  .right_card{
+    border-left: none;
+   }
+   .left_card{
+     border-right: none;
+   }
+  }
